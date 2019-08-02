@@ -1,0 +1,36 @@
+body {
+  background-color: rgb(34, 32, 32);
+  font-family: 'Long Cang', cursive;
+}
+
+.image-container {
+  text-align: center;
+ }
+
+ .image-container img {
+   margin-top: .5em;
+   height: 200px;
+   width: 300px;
+ }
+
+ .header-box {
+   color: #fff;
+   border: dashed 2px #fff;
+   width: 300px;
+   margin-top: .5em;
+   margin-right: auto;
+   margin-left: auto;
+ }
+ .box {
+   margin-top: .75em;
+   height:350px;
+   width: 300px;
+   border: dashed 2px #fff;
+   margin-right: auto;
+   margin-left: auto;
+   color: #fff;
+ }
+
+ .box1 {
+  
+ }
