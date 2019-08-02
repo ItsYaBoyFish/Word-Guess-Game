@@ -13,13 +13,37 @@
   <div class="image-container">
     <img src="/assets/images/Title-Image.jpg" alt="Word Guess Game">
   </div>
-  <div class="header-box">
-    <h1>Word Guess Game</h1>
+  <div class="main-content">
+    <div class="header-box">
+      <h1>Word Guess Game</h1>
+    </div>
+    <div class="box-left">
+      <h4>Instructions:</h4>
+      <h5>
+        Press Any Key To Begin Playing!
+      </h5>
+      <div class="scoreboard">
+        <h4>Scoreboard:</h4>
+        <h4>Wins</h4>
+        <span class="game-stats" id="game-wins">...</span>
+        <h4>Losses</h4>
+        <span class="game-stats" id="game-losses">...</span>
+      </div>
+      <button class="start-game" id="start-game">Start Game!</button>
+      <button class="restart-game" id="restart-game">Restart Game!</button>
+    </div>
+    <div class="box-right">
+      
+      <h4>Current Word</h4>
+      <span class="game-stats" id="chosen-word"></span>
+      <h4>Number Of Guesses Remaining</h4>
+      <span class="game-stats" id="remaining-guesses">10</span>
+      <h4>Letters Already Guessed</h4>
+      <div class="letters">
+        <span class="game-stats" id="letters-guessed"></span>
+      </div>
+    </div>
   </div>
-  <div class="box box-left">
-    
-  </div>
-
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
