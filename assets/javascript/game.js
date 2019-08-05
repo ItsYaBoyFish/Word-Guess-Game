@@ -8,13 +8,13 @@ let guessableWords = ['austin', 'joel', 'sam'];
 
 // This is the word that the computer chooses for the user to guess
 
+// Utilize the .includes() functionality for an array to check if something is inside the array
+
 window.onload = function() {
   pickedWord = guessableWords[Math.floor(Math.random() * guessableWords.length)];
   console.log(pickedWord);
   for (var i = 0; i < pickedWord.length; i++) {
-    chosenWord.textContent += "_ "
-    pickedWordLetters.push(pickedWord[i])
-    console.log(pickedWordLetters[i]);
+    chosenWord.textContent += "_ ";
   }
 }
  startGame.addEventListener('click', () => {
