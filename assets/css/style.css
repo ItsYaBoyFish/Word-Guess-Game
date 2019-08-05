@@ -26,6 +26,10 @@ body {
    margin-left: auto;
  }
 
+ .header-box h1 {
+   text-align: center;
+ }
+
  .box-left {
    float: left;
    margin-top: .75em;
