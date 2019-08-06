@@ -19,9 +19,25 @@ window.onload = function() {
 }
  startGame.addEventListener('click', () => {
    document.onkeyup = function(event) {
-     input = event.key;
+    // Gathering Input and Lowercasing it
+      input = event.key;
      input = input.toLowerCase();
      console.log(input);
+    // End of Gathering
+    if (userGuesses.includes(input)) {
+      console.log('That Guess Was Already Submitted')
+    } else {
+      userGuesses.push(input)
+      for (var i = 0; i < userGuesses.length; i++) {
+        if (lettersGuessed.textContent.includes(userGuesses[i])) {
+          console.log('Already Exists');
+        } else {
+          lettersGuessed.textContent += userGuesses[i];
+        }
+      };
+      console.log(userGuesses);
+      // Add the subtraction of remaining guesses here.
+    }
    }
  });
 
