@@ -18,7 +18,11 @@ window.onload = function() {
   }
 }
  startGame.addEventListener('click', () => {
-   
+   document.onkeyup = function(event) {
+     input = event.key;
+     input = input.toLowerCase();
+     console.log(input);
+   }
  });
 
  restartGame.addEventListener('click', () => {
